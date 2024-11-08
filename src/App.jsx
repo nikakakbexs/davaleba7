@@ -48,8 +48,8 @@ const Feedback = () => {
             disabled={!selectedRating}
             className={`w-full py-2 rounded-md text-lg font-semibold ${
               selectedRating
-                ? "bg-orange-500 text-white hover:bg-orange-600"
-                : "bg-gray-500 text-gray-300 cursor-not-allowed"
+                ? "bg-orange-500 text-black hover:bg-white"
+                : "bg-orange-500 text-black cursor-not-allowed"
             }`}
           >
             Submit
@@ -63,11 +63,11 @@ const Feedback = () => {
             alt=""
           />
           <div className="">
-            <p className="text-lg font-semibold mb-2 text-orange-600">
+            <p className="text-lg font-semibold mb-2 text-orange-600 mt-8">
               You selected {selectedRating} out of 5
             </p>
           </div>
-          <h2 className="text-2xl font-semibold mb-4">Thank you!</h2>
+          <h2 className="text-2xl font-semibold mb-4 mt-5">Thank you!</h2>
           <p className="text-gray-400">
             We appreciate you taking the time to give a rating. If you ever need
             more support, don't hesitate to get in touch!
